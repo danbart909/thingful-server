@@ -254,7 +254,7 @@ function seedThingsTables(db, users, things, reviews=[]) {
     // update the auto sequence to match the forced id values
     await trx.raw(
       `SELECT setval('thingful_things_id_seq', ?)`,
-      [articles[articles.length - 1].id],
+      [things[things.length - 1].id],
     )
   })  // only insert comments if there are some, also update the sequence counter
 }  
