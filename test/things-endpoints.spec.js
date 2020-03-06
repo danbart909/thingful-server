@@ -41,8 +41,8 @@ describe.only('Things Endpoints', function() {
         path: '/api/things/1'
       },
       {
-        name: 'GET /api/things/:thing_id/comments',
-        path: '/api/things/1/comments'
+        name: 'GET /api/things/:thing_id/reviews',
+        path: '/api/things/1/reviews'
       },
     ]
     
