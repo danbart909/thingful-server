@@ -183,13 +183,11 @@ function makeExpectedThingReviews(users, thingId, reviews) {
       id: review.id,
       text: review.text,
       rating: review.rating,
-      date_created: review.date_created,
       user: {
         id: reviewUser.id,
         user_name: reviewUser.user_name,
         full_name: reviewUser.full_name,
         nickname: reviewUser.nickname,
-        date_created: reviewUser.date_created,
       }
     }
   })
