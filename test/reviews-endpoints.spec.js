@@ -38,7 +38,7 @@ describe.only('Reviews Endpoints', function() {
       return supertest(app)
         .post('/api/reviews')
         .set('Authorization', helpers.makeAuthHeader(userInvalidPass))
-        .expect(401, { error: `Unauthorized request` })
+        .expect(400, { error: `Missing 'thing_id' in request body` })
     })
 
     it(`creates an review, responding with 201 and the new review`, function() {
